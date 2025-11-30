@@ -37,3 +37,9 @@ fix: 修改
 - 回退 HEAD^2，保留commit到working tree
 - 回退 HEAD^2，不保留
 
+### git revert
+> 一般用于commit 已经 push到远程
+- 撤销单个提交
+- 撤销多个提交
+- 撤销合并提交
+
