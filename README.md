@@ -43,3 +43,9 @@ fix: 修改
 - 撤销多个提交
 - 撤销合并提交
 
+### git chery-pick
+> 用于pick一个或多个提交
+- pick单个提交，
+- pick多个提交，(] []，
+- 参数 --no-commit, --edit, --signoff, --continue, --abort, --x
+
