@@ -30,3 +30,10 @@ fix: 修改
 - 恢复 index
 - 恢复 working tree + index
 - 从 commit 恢复 文件
+
+### git reset
+> commit 未提交
+- 回退 HEAD^2，保留commit到index
+- 回退 HEAD^2，保留commit到working tree
+- 回退 HEAD^2，不保留
+
