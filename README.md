@@ -24,3 +24,9 @@ fix: 修改
 - 切换分支
 - 基于 commit 创建分支
 - 仅查看某 commit 的内容
+
+### git restore
+- 恢复 working tree
+- 恢复 index
+- 恢复 working tree + index
+- 从 commit 恢复 文件
