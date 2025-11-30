@@ -52,3 +52,9 @@ feat: 先确定练习的命令会有什么结果，对比加深印象
 - pick多个提交，(] []，
 - 参数 --no-commit, --edit, --signoff, --continue, --abort, --x
 
+### git reflog
+- 查找被删掉的commit
+- 查找被删掉的branch
+- 回到rebase前
+- 回到两天前
+
