@@ -2,6 +2,3 @@ BBB
 
 
 B
-
-
-BBBBBB
