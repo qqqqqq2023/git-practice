@@ -1,0 +1,65 @@
+{
+    // vim 配置
+
+    "vim.easymotion": true, // 启用easymotion插件
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true, // 是否启用系统粘贴板作为vim寄存器
+    "vim.useCtrlKeys": true, // 是否由vim接管ctrl+any的按键
+    "vim.hlsearch": true, // 是否突出显示与当前搜索匹配的所有文本
+    "vim.highlightedyank.enable": true, // 被复制时是否高亮
+    "vim.highlightedyank.duration": 500, // 被复制时高亮持续时间：0.5秒
+    "vim.mouseSelectionGoesIntoVisualMode": true,  
+    "vim.handleKeys": {  // 这个是配置的 vscode 的快捷键的绑定，这里是避免与 vim 快捷键的冲突
+    },
+    "editor.lineNumbers": "relative",  // 这个相对主要是提示用处，一次跳转多少行
+    "vim.normalModeKeyBindingsNonRecursive": [  // 移动窗口的快捷键
+        {
+            "before": ["<C-j>"], 
+            "after": ["<C-e>"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["<C-y>"]
+        },
+        {
+            "before": ["/", "?"],
+            "commands": [
+                {
+                    "command": "editor.action.clipboardCopyAction",
+                    "when": "editorTextFocus"
+                },
+                {
+                    "command": "actions.find",
+                    "args": { "isReplace": false, "searchScope": 1 },
+                    "when": "editorTextFocus"
+                },
+                {
+                    "command": "default:type",
+                    "args": { "text": "<C-R>\"<CR>" },
+                    "when": "editorFocus && !editorReadonly"
+                }
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["j", "j"],
+          "after": ["<Esc>"]
+        }
+      ],
+  
+    "vim.leader": "<space>",
+    
+    // vim 3种模式对时应的颜色
+    "vim.statusBarColors.normal":"#61d6af5d",
+    "vim.statusBarColors.insert":"#c75d9b52",
+    "vim.statusBarColors.visual":"#5168b35e",
+    "vim.statusBarColorControl":true,
+    // vim 折叠代码防止自动展开
+    "vim.foldfix":true,
+
+    // To improve performance
+    "extensions.experimental.affinity": {
+      "vscodevim.vim": 1
+    }
+}
