@@ -13,33 +13,6 @@
     },
     "editor.lineNumbers": "relative",  // 这个相对主要是提示用处，一次跳转多少行
     "vim.normalModeKeyBindingsNonRecursive": [  // 移动窗口的快捷键
-        {
-            "before": ["<C-j>"], 
-            "after": ["<C-e>"]
-        },
-        {
-            "before": ["<C-k>"],
-            "after": ["<C-y>"]
-        },
-        {
-            "before": ["/", "?"],
-            "commands": [
-                {
-                    "command": "editor.action.clipboardCopyAction",
-                    "when": "editorTextFocus"
-                },
-                {
-                    "command": "actions.find",
-                    "args": { "isReplace": false, "searchScope": 1 },
-                    "when": "editorTextFocus"
-                },
-                {
-                    "command": "default:type",
-                    "args": { "text": "<C-R>\"<CR>" },
-                    "when": "editorFocus && !editorReadonly"
-                }
-            ]
-        }
     ],
     "vim.insertModeKeyBindings": [
         {
